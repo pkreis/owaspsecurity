@@ -1,0 +1,67 @@
+#mainMenu{
+    position: fixed;
+    float: left;
+    width:20%;
+    height: 100%;
+    background: #222222;
+}
+#mainMenu header{
+    padding:30px 0px 30px 0px;
+    background: url('../images/header-bg.png') no-repeat, #773388;
+    background-size: cover;
+    text-align: center;
+}
+#mainMenu header img{
+    width: 80%;
+}
+#mainMenu header h1{
+    font-family: Sansation Light;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: normal;
+}
+#mainMenu ul{
+    margin:0px 0px 0px 0px; 
+    padding:0px 0px 0px 0px; 
+    list-style:none;
+    font-family: Sansation Light;
+}
+#mainMenu ul li{
+    margin:0px 0px 0px 0px; 
+    list-style:none;
+    border-top: solid 1px #353535;
+}
+#mainMenu ul li p{
+    padding:10px 10px 10px 10px; 
+    font-size: 14px;
+    color: #888888;
+    cursor: pointer;
+}
+#mainMenu ul li.active p{
+    color: #9f4fb3;
+}
+#mainMenu ul li p:hover{
+    color: #9f4fb3;
+}
+#mainMenu ul li ul{
+    background: #2d2d2d;
+    display: none;
+}
+#mainMenu ul li ul li a{
+    font-family: Sansation Light;
+    padding:10px 10px 10px 20px; 
+    font-size: 14px;
+    color: #888888;
+    display: block;
+}
+#mainMenu ul li ul li a:hover{
+    color: #9f4fb3;
+}
+#mainMenu #author{
+    position: absolute;
+    bottom:5px;
+    left:5px;
+    text-align: left;
+    font-size: 10px;
+    color: #666666;
+}

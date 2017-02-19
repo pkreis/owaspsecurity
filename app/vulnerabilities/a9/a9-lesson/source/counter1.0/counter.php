@@ -1,0 +1,1 @@
+<b> Suma odwiedzin: </b><?php echo $all; ?>

@@ -1,0 +1,118 @@
+/* KODOWANIE ZNAKÓW */
+@charset "utf-8"; 
+/* IMPORT ARKUSZY */
+@import url("fonts.css");
+@import url("nav.css");
+@import url("content.css");
+
+/* ZAZNACZENIE */
+    ::-webkit-selection {background:#773388; color:#ffffff;}
+    ::-moz-selection {background:#773388; color:#ffffff;}
+    ::-o-selection {background:#773388; color:#ffffff;}
+    ::-ms-selection {background:#773388; color:#ffffff;}
+    ::selection {background:#773388; color:#ffffff;}
+/* HTML */
+html{
+    height:100%;
+    font-family:Sansation Light, sans-serif;
+        overflow-y:scroll;
+}
+/* BODY */
+body{
+    margin:0px 0px 0px 0px; 
+    padding:0px 0px 0px 0px; 
+    height:100%;
+    background:#ffffff;
+}
+/* MODYFIKATORY TAGÓW */
+a{
+    font-family:Sansation Regular, sans-serif; 
+    font-size:26px; color:#000000; 
+    text-decoration:none; 
+    border:none !important; 
+    outline:none !important; 
+}
+a:hover{
+    color:#773388;
+}
+
+b{
+    font-family:Sansation Bold, sans-serif; 
+    font-weight:normal;
+}
+span{
+}
+p{
+    margin:auto auto auto auto; 
+    padding:0px 0px 0px 0px; 
+    font-size:18px
+        ;}
+hr{
+    margin:auto auto auto auto; 
+    width:100%; 
+    height:1px; 
+    border:none; 
+    border-bottom:solid 1px #000000;
+}
+xmp{
+    font-family: Source Code Pro;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.button{
+    margin: auto auto auto auto;
+    padding:10px 18px 10px 18px;
+    border:none ;
+    outline:none;
+    background: #9f4fb3;
+    color:#ffffff;
+    font-size: 16px;
+    display: table;
+}
+
+/* Pretty printing styles. Used with prettify.js. */
+/* Vim sunburst theme by David Leibovic */
+
+pre .str, xmp .str { color: #ff8f00; } /* string  - green */
+pre .kwd, xmp .kwd { color: #ff0000; } /* keyword - dark pink */
+pre .com, xmp .com { color: #24b30c; font-style: italic; } /* comment - gray */
+pre .typ, xmp .typ { color: #4999ff; } /* type - light blue */
+pre .lit, xmp .lit { color: #3387CC; } /* literal - blue */
+pre .pun, xmp .pun { color: #f71212; } /* punctuation - white */
+pre .pln, xmp .pln { color: #222222; } /* plaintext - white */
+pre .tag, xmp .tag { color: #2f6eff; } /* html/xml tag    - light blue */
+pre .atn, xmp .atn { color: #2f6eff; } /* html/xml attribute name  - khaki */
+pre .atv, xmp .atv { color: #65B042; } /* html/xml attribute value - green */
+pre .dec, xmp .dec { color: #3387CC; } /* decimal - blue */
+
+pre.prettyprint, xmp.prettyprint {
+	background-color: #fff;
+}
+
+xmp.prettyprint {
+	width: 95%;
+	margin: auto auto;
+	padding: 0.2em 1em;
+	white-space: pre-wrap;
+}
+
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre .str, xmp .str { color: #060; }
+  pre .kwd, xmp .kwd { color: #006; font-weight: bold; }
+  pre .com, xmp .com { color: #600; font-style: italic; }
+  pre .typ, xmp .typ { color: #404; font-weight: bold; }
+  pre .lit, xmp .lit { color: #044; }
+  pre .pun, xmp .pun { color: #440; }
+  pre .pln, xmp .pln { color: #000; }
+  pre .tag, xmp .tag { color: #006; font-weight: bold; }
+  pre .atn, xmp .atn { color: #404; }
+  pre .atv, xmp .atv { color: #060; }
+}
